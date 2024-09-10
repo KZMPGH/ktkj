@@ -1,0 +1,151 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0em;
+    background-color: #222222;
+}
+
+.paragraf{
+    text-indent: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#maintance{
+    background-color: #222222;
+    position: fixed;
+    top: 2em;
+    z-index: 1;
+}
+
+#maintance h2{
+    color: red;
+    padding: 0.5em;
+    margin: 0em;
+    text-align: center;
+}
+
+#header00{
+    color: #FDC11F;
+    text-align: center;
+    background-color: #222222;
+}
+
+#header00 h1{
+    letter-spacing: 0.16em;
+    margin: 0em;
+    padding-top: 0.4em;
+    padding-bottom: 0.1em;
+}
+
+#header00 h4{
+    margin: 0em;
+    padding-bottom: 0.8em;
+}
+
+header{
+    z-index: 100;
+    position: sticky;
+    top: -0.1em;
+}
+
+.a01{
+    border-top: 0.001em solid  #333;
+    background-color: #222222;
+    color: white;
+}
+
+.a02{
+    display: flex;
+    justify-content: center;
+}
+
+.l01 h4{
+    margin: 0em;
+    padding: 0.4em;
+    letter-spacing: 0.04em;
+    transition: 0.16s ease-in-out, color 0.7s;
+}
+
+.l01{
+    border-left: #333 0.11em solid ;
+}
+
+.l01 h4:hover{
+    color: #FDC11F;
+    translate: 0em 0.13em;
+}
+
+.a03{
+    border-right: #333 0.11em solid ;
+}
+
+
+/*  */
+
+#footer{
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+}
+
+.f01{
+    width: 100%;
+    max-width: 800px;
+}
+
+.f02{
+    display: inline-block;
+    color: #7979797c;
+    padding: 1em;
+}
+
+.f02 h4{
+    padding: 0em;
+    margin: 0em;
+}
+
+.f02 h5{
+    padding-top: 0.8em;
+    margin: 0em;
+}
+
+.f03{
+    border-bottom: 0.1em solid #333;
+}
+
+.bf01{
+    display: flex;
+    color: #7979797c;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7em;
+    margin-bottom: 2em;
+}
+
+.bf01 h3, .bf01 h5{
+    margin: 0.2em;
+}
+
+.bf01 a{
+    text-decoration: underline;
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 600px (misalnya, perangkat mobile) */
+@media only screen and (max-width: 600px) {
+
+    html, button{
+        font-size: 2.8vw;
+    }
+    
+    svg{
+        width: 2em;
+    }
+
+    ol, ul{
+        padding-left: 2.5em;
+    }
+
+}
