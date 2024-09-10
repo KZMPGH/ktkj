@@ -42,6 +42,6 @@ function overlay() {
     '</div>';
 
     document.getElementById("maintance").innerHTML =
-    '<h2>Halaman Sedang Dalam Perbaikan!!...</h2>';
+    '<h2>Beberapa Halaman Sedang Dalam Perbaikan!!...</h2>';
 
 }
