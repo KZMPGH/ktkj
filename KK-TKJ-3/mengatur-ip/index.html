@@ -1,0 +1,99 @@
+<script src="../../overlay.js"></script>
+<script>
+    // Function untuk memanggil overlay
+    window.onload = function() {
+        overlay();
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengatur IP - KK TKJ 3 - KZMP TKJ</title>
+    <link rel="stylesheet" href="../../overlay.css">
+    <link rel="stylesheet" href="../../css/KK-TKJ-3/tugas/index.css">
+</head>
+<body>
+
+    <div id="maintance"></div>
+    <div id="header00"></div>
+    <!-- HEADER -->
+    <header id="header"></header>
+    <!-- HEADER -->
+     
+    <article>
+        <div id="article01">
+            <div class="isi01">
+                <div class="judul">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M230.47,67.5a12,12,0,0,0-19.26-4.32L172.43,99l-12.68-2.72L157,83.57l35.79-38.78a12,12,0,0,0-4.32-19.26A76.07,76.07,0,0,0,88.41,121.64L30.92,174.18a4.68,4.68,0,0,0-.39.38,36,36,0,0,0,50.91,50.91l.38-.39,52.54-57.49A76.05,76.05,0,0,0,230.47,67.5ZM160,148a51.5,51.5,0,0,1-23.35-5.52,12,12,0,0,0-14.26,2.62L64.31,208.66a12,12,0,0,1-17-17l63.55-58.07a12,12,0,0,0,2.62-14.26A51.5,51.5,0,0,1,108,96a52.06,52.06,0,0,1,52-52h.89L135.17,71.87a12,12,0,0,0-2.91,10.65l5.66,26.35a12,12,0,0,0,9.21,9.21l26.35,5.66a12,12,0,0,0,10.65-2.91L212,95.12c0,.3,0,.59,0,.89A52.06,52.06,0,0,1,160,148Z"></path></svg>
+                    <h1>MENGATUR IP</h1>                    
+                </div>
+                <div class="langkah01">
+                    <ol>
+                        <li>
+                            <p>Setelah membuka VirtualBox Manager, pilih proyek (mesin virtual) yang telah Anda buat. Lalu, di sudut kanan atas, klik tombol "Settings" untuk membuka konfigurasi lebih lanjut dari mesin virtual tersebut.</p>    
+                            <img src="image/1.jpg" alt="gambar">                        
+                        </li>
+                        <li>
+                            <p>Pada menu "Network", ubah opsi "Attached to" menjadi "Bridged Adapter". Di bagian "Name", pilih jaringan Ethernet atau WiFi yang sedang Anda gunakan. Ini akan menghubungkan mesin virtual langsung ke jaringan yang sama dengan komputer host Anda.</p>
+                            <img src="image/2.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Setelah menyelesaikan konfigurasi jaringan, klik tombol "Start" pada mesin virtual Anda. Ini akan menjalankan mesin virtual dengan pengaturan jaringan yang telah disesuaikan.</p>
+                            <img src="image/3.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Setelah mesin virtual dimulai, login ke akun pengguna Anda dengan memasukkan username dan password yang telah Anda buat. Anda akan tahu bahwa login berhasil ketika tanda "~$" muncul di depan hostname, menandakan Anda berada di terminal siap untuk perintah selanjutnya.</p>
+                            <img src="image/4.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>ketik perintah berikut di terminal: </p>
+                                <div id="p" class="terminal"> ip a</div> 
+                            <p>Lihat IP address di depan "inet", misalnya 192.168.1.6. Hafalkan alamat IP tersebut, karena itu akan digunakan untuk konfigurasi jaringan atau keperluan lainnya.</p>
+                            <img src="image/5.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Untuk mengakses hak administratif, ketik perintah berikut di terminal:</p>
+                                <div id="p" class="terminal">su</div>
+                            <p>Masukkan password Anda saat diminta. Setelah berhasil, Anda akan melihat "root" muncul sebagai bagian dari prompt di terminal, menandakan bahwa Anda telah masuk sebagai superuser.</p>
+                            <img src="image/SuperUser.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Dengan akses sebagai superuser, ketik perintah berikut untuk membaca dan mengedit file konfigurasi jaringan:</p>
+                                <div id="p" class="terminal">nano /etc/network/interfaces</div>
+                            <p>Ini akan membuka file "interfaces" di editor teks nano, memungkinkan Anda untuk melihat dan mengubah pengaturan jaringan sesuai kebutuhan.</p>
+                            <img src="image/SuperUser01.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Di dalam editor nano, tambahkan baris-baris berikut di bagian bawah file:</p>
+                                <div id="p" class="terminal">&nbsp;&nbsp;&nbsp;&nbsp;address 192.168.1.6 <br>&nbsp;&nbsp;&nbsp;&nbsp;netmask 255.255.255.0 <br>&nbsp;&nbsp;&nbsp;&nbsp;gateway 192.168.1.1 <br></div>
+                            <ul>
+                                <li type="disc">Gantilah 192.168.1.6 dengan IP address Anda yang sebelumnya yang terdapat di "ip a", dan untuk gateway bisa mengganti IP address paling belakang menjadi 1.</li>
+                            </ul>
+                            <p>Setelah selesai, tekan Ctrl + X untuk keluar dari nano. Kemudian tekan Y untuk menyimpan perubahan, dan Enter untuk mengonfirmasi.</p>
+                            <img src="image/6.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Tekan "Y" untuk mengonfirmasi "Yes" dalam "Save modified buffer". Kemudian, tekan Enter untuk menyimpan perubahan pada file.</p>
+                            <img src="image/7.jpg" alt="">
+                            <img src="image/8.jpg" alt="">
+                        </li>
+                        <li>
+                            <p>Setelah menyimpan perubahan pada file konfigurasi, ketik perintah berikut di terminal untuk menguji koneksi internet:</p>
+                                <div id="p" class="terminal">ping google.com</div>
+                            <p>Ini akan mengirimkan paket data ke google.com dan menampilkan respons jika koneksi internet Anda berfungsi dengan baik.</p>
+                            <img src="image/ping.jpg" alt="">
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <!-- FOOTER -->
+</body>
+</html>

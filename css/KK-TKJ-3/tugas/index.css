@@ -50,20 +50,32 @@ ol{
     transition: background-color 0.5s ease, padding 0.5s ease; /* Animasi untuk perubahan padding dan background */
 }
 
-.langkah01 > ol > li p , .langkah01 > ol > li ul{ 
+.langkah01 > ol > li p , .langkah01 > ol > li ul, #p{ 
     max-height: 0; /* Dimulai dari height 0 */
     opacity: 0;
     transform: translateY(3em);
-    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease; /* Animasi max-height */
+    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease, padding 0.5s ease; /* Animasi max-height */
     margin: 0;
 }
 
 .langkah01 > ol > li:hover{
-    background-color: #e2e2e2; /* Background berubah saat hover */
+    background-color: #e0e0e0; /* Background berubah saat hover */
     padding: 1.2em;
-    p , ul{
+    p , ul, #p{
         max-height: 100px; /* Atur sesuai tinggi maksimal dari teks */
         opacity: 1;
         transform: translateY(0em);
     }
+    .terminal{
+        padding: 0.4em;
+        padding-left: 0.6em;
+    }
+}
+
+.terminal{
+    padding: 0em;
+    padding-left: 0;
+    border-radius: 0.4em;
+    color: rgb(231, 231, 231);
+    background-color: #474747;
 }
