@@ -1,0 +1,293 @@
+<script src="../../overlay.js"></script>
+<script>
+    // Function untuk memanggil overlay
+    window.onload = function() {
+        overlay();
+    }
+</script>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Asterisk - KK TKJ 3 - KZMP TKJ</title>
+    <link rel="stylesheet" href="../../overlay.css">
+    <link rel="stylesheet" href="../../css/KK-TKJ-3/tugas/index.css">
+</head>
+<body>
+
+    <div id="maintance"></div>
+    <div id="header00"></div>
+    <!-- HEADER -->
+    <header id="header"></header>
+    <!-- HEADER -->
+     
+    <article>
+        <div id="article01">
+            <div class="isi01">
+                <div class="judul">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,76a52,52,0,1,0,52,52A52.06,52.06,0,0,0,128,76Zm0,80a28,28,0,1,1,28-28A28,28,0,0,1,128,156Zm92-27.21v-1.58l14-17.51a12,12,0,0,0,2.23-10.59A111.75,111.75,0,0,0,225,71.89,12,12,0,0,0,215.89,66L193.61,63.5l-1.11-1.11L190,40.1A12,12,0,0,0,184.11,31a111.67,111.67,0,0,0-27.23-11.27A12,12,0,0,0,146.3,22L128.79,36h-1.58L109.7,22a12,12,0,0,0-10.59-2.23A111.75,111.75,0,0,0,71.89,31.05,12,12,0,0,0,66,40.11L63.5,62.39,62.39,63.5,40.1,66A12,12,0,0,0,31,71.89,111.67,111.67,0,0,0,19.77,99.12,12,12,0,0,0,22,109.7l14,17.51v1.58L22,146.3a12,12,0,0,0-2.23,10.59,111.75,111.75,0,0,0,11.29,27.22A12,12,0,0,0,40.11,190l22.28,2.48,1.11,1.11L66,215.9A12,12,0,0,0,71.89,225a111.67,111.67,0,0,0,27.23,11.27A12,12,0,0,0,109.7,234l17.51-14h1.58l17.51,14a12,12,0,0,0,10.59,2.23A111.75,111.75,0,0,0,184.11,225a12,12,0,0,0,5.91-9.06l2.48-22.28,1.11-1.11L215.9,190a12,12,0,0,0,9.06-5.91,111.67,111.67,0,0,0,11.27-27.23A12,12,0,0,0,234,146.3Zm-24.12-4.89a70.1,70.1,0,0,1,0,8.2,12,12,0,0,0,2.61,8.22l12.84,16.05A86.47,86.47,0,0,1,207,166.86l-20.43,2.27a12,12,0,0,0-7.65,4,69,69,0,0,1-5.8,5.8,12,12,0,0,0-4,7.65L166.86,207a86.47,86.47,0,0,1-10.49,4.35l-16.05-12.85a12,12,0,0,0-7.5-2.62c-.24,0-.48,0-.72,0a70.1,70.1,0,0,1-8.2,0,12.06,12.06,0,0,0-8.22,2.6L99.63,211.33A86.47,86.47,0,0,1,89.14,207l-2.27-20.43a12,12,0,0,0-4-7.65,69,69,0,0,1-5.8-5.8,12,12,0,0,0-7.65-4L49,166.86a86.47,86.47,0,0,1-4.35-10.49l12.84-16.05a12,12,0,0,0,2.61-8.22,70.1,70.1,0,0,1,0-8.2,12,12,0,0,0-2.61-8.22L44.67,99.63A86.47,86.47,0,0,1,49,89.14l20.43-2.27a12,12,0,0,0,7.65-4,69,69,0,0,1,5.8-5.8,12,12,0,0,0,4-7.65L89.14,49a86.47,86.47,0,0,1,10.49-4.35l16.05,12.85a12.06,12.06,0,0,0,8.22,2.6,70.1,70.1,0,0,1,8.2,0,12,12,0,0,0,8.22-2.6l16.05-12.85A86.47,86.47,0,0,1,166.86,49l2.27,20.43a12,12,0,0,0,4,7.65,69,69,0,0,1,5.8,5.8,12,12,0,0,0,7.65,4L207,89.14a86.47,86.47,0,0,1,4.35,10.49l-12.84,16.05A12,12,0,0,0,195.88,123.9Z"></path></svg>
+                    <h1>Install Asterisk</h1>                    
+                </div>
+                <div class="langkah01">
+                    <h3>Bagian 1: Login Super User</h3>
+                    <ol>
+                        <li>
+                            <p>Pertama, buka VirtualBox dan pilih mesin virtual yang telah Anda konfigurasi. Klik dua kali pada mesin virtual atau klik tombol "Start" untuk menjalankan mesin virtual.</p>    
+                            <div class="divImage">
+                                <img src="../image/start-mesin.jpg" alt="gambar">
+                            </div>
+                                                    
+                        </li>
+                        <li>
+                            <p>Setelah mesin virtual berjalan, login menggunakan akun Anda dengan memasukkan username dan password yang telah Anda buat sebelumnya.</p>
+                            <div class="divImage">
+                                <img src="../image/login-user.jpg" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <p>Setelah login ke akun Anda, ketik perintah berikut di terminal untuk masuk sebagai superuser:</p>
+                                <div id="p" class="terminal"><p>su</p></div>
+                            <p>Masukkan password superuser Anda saat diminta. Ini memberikan Anda hak administratif untuk melakukan instalasi.</p>
+                            <div class="divImage">
+                                <img src="../image/super-user.jpg" alt="">
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="langkah01">
+                    <h3>Bagian 2: Cek Settingan IP</h3>
+                    <h4>Untuk Mengatur Alamat IP sudah terdapat pada halaman website berikut: <a href="../mengatur-ip/" id="link">Mengatur IP</a></h4>
+                    <ol>
+                        <li>
+                            <p>Pastikan alamat ip pada ip a harus sama dengan settingan ip pada network/interfaces</p>
+                            <div class="divImage">
+                                <img src="../image/ip-a.jpg" alt="">
+                            </div>
+                                            <div class="divImage">
+                                <img src="../image/ip-address.jpg" alt="">
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="langkah01">
+                    <h3>Bagian 3: Mengatur Asterisk</h3>
+                    <ol>
+                        <li>
+                            <p>Untuk mengatur konfigurasi SIP di Asterisk, ketik perintah berikut di terminal:</p>
+                                <div id="p" class="terminal"><p>nano /etc/asterisk/sip.conf</p></div>
+                            <p>Ini akan membuka file "sip.conf" di editor nano, tempat Anda dapat menambahkan atau mengubah pengaturan SIP untuk Asterisk.</p>
+                            <div class="divImage">
+                                <img src="image/1.jpg" alt="">
+                  
+                            </div>
+                                  </li>
+                        <li>
+                            <p>Setelah membuka file "sip.conf" di nano, scroll ke bagian paling bawah dan tambahkan teks berikut:</p>
+                                <div id="p" class="terminal">
+                                    <p>[general]<br>
+                                    port=5060<br
+                                    >bindaddr=0.0.0.0<br>
+                                    context=(namamu)<br><br></p>
+                                    
+                                    <p>[192168(nomer 01)]<br>
+                                    type=friend<br>
+                                    context=notIp<br>
+                                    secret=12345<br>
+                                    host=dynamic<br><br></p>
+                                    
+                                    <p>[192168(nomer 02)]<br>
+                                    type=friend<br>
+                                    context=notIp<br>
+                                    secret=6789<br>
+                                    host=dynamic</p></div>
+                            <ul type="disc">
+                                <li><p>Gantilah (namamu) dengan nama atau konteks yang diinginkan.</p></li>
+                                <li><p>Gantilah (nomer 01) dengan no absen anda atau angka yang diinginkan.</p></li>
+                                <li><p>Gantilah (nomer 02) dengan no absen temanmu atau angka yang diinginkan.</p></li>
+                            </ul>
+                            <p>Keterangan:</p>
+                            <ul type="disc">
+                                <li><p>[general] sebagai fungsi global pembuatan perintah asterisk.</p></li>
+                                <li><p>Port 5060 adalah port yang dipanggil.</p></li>
+                                <li><p>[19216820] dan [19216805] adalah nomor kontak yang akan digunakan.</p></li>
+                                <li><p>Secret 1234 dan 6789 adalah password sebagai autentikasi.</p></li>
+                            </ul>
+                            <p>Contohnya seperti dibawah ini:</p>
+                            <div class="divImage">
+                                <img src="image/2.jpg" alt="">
+                  
+                            </div>    
+                                  </li>
+                        <li>
+                            <p>Tekan Ctrl + X untuk keluar dari editor nano. Saat diminta untuk menyimpan perubahan, tekan "Y" untuk mengonfirmasi, lalu tekan Enter untuk menyimpan file dan keluar dari editor.</p>
+                            <div class="divImage">
+                                <img src="image/3.jpg" alt="">
+                  
+                            </div>
+                                      <div class="divImage">
+                                <img src="image/4.jpg" alt="">
+                  
+                            </div>
+                                  </li>
+                        <li>
+                            <p>Untuk mengatur konfigurasi ekstensi di Asterisk, ketik perintah berikut di terminal:</p>
+                                <div id="p" class="terminal"><p>nano /etc/asterisk/extensions.conf</p></div>
+                            <div class="divImage">
+                                <img src="image/5.jpg" alt="">
+                  
+                            </div>
+                                      </li>
+                        <li>
+                            <p>Scroll ke bagian paling bawah dan tambahkan teks berikut:</p>
+                                <div id="p" class="terminal"><p>[tekaje]<br>[notIp]<br>exten => 192168(nomer 01), 1, Dial(SIP/192168(nomer 01))<br>exten => 192168(nomer 02), 1, Dial(SIP/192168(nomer 02))</p></div>
+                            <ul type="disc">
+                                <li><p>Gantilah (nomer 01) dengan no absen anda atau angka yang anda isi tadi.</p></li>
+                                <li><p>Gantilah (nomer 02) dengan no absen anda atau angka yang anda isi tadi.</p></li>
+                            </ul>
+                            <p>Keterangan:</p>
+                            <ul type="disc">
+                                <li><p>[tekaje] adalah fungsi global yang masih terhubung dengan sip.conf</p></li>
+                                <li><p>[notIp] nama context yang sesuai pada sip.conf</p></li>
+                            </ul>
+                            <div class="divImage">
+                                <img src="image/6.jpg" alt="">
+                  
+                            </div>
+                                  </li>
+                        <li>
+                            <p>Tekan Ctrl + X untuk keluar dari editor nano. Saat diminta untuk menyimpan perubahan, tekan "Y" untuk mengonfirmasi, lalu tekan Enter untuk menyimpan file dan keluar dari editor.</p>
+                            <div class="divImage">
+                                <img src="image/7.jpg" alt="">
+                  
+                            </div>
+                                      <div class="divImage">
+                                <img src="image/8.jpg" alt="">
+                  
+                            </div>
+                                  </li>
+                        <li>
+                            <p>Ketik perintah berikut untuk me-restart layanan Asterisk agar perubahan konfigurasi diterapkan:</p>
+                                <div id="p" class="terminal"><p>systemctl restart asterisk.service</p></div>
+                            <p>Ini akan memulai ulang layanan Asterisk dengan pengaturan baru yang telah Anda buat.</p>
+                            <div class="divImage">
+                                <img src="image/9.jpg" alt="">
+                  
+                            </div>
+                                  </li>
+                    </ol>
+                </div>
+                <div class="langkah01">
+                    <h3>Bagian 4: Mengatur Software Uji Coba</h3>
+                    <ol>
+                        <li>
+                            <p>Isi kolom dibawah ini sesuai dengan:</p>
+                            <ul type="disc">
+                                <li><p>Kolom Pertama: Masukkan nomor kontak pertama sesuai konfigurasi SIP, misalnya 19216820.</p></li>
+                                <li><p>Kolom Kedua: Masukkan password/secret yang telah Anda atur sebelumnya, misalnya 12345.</p></li>
+                                <li><p>Klik Login: Setelah mengisi kedua kolom, klik tombol "Login" untuk menghubungkan Zoiper dengan Asterisk.</p></li>
+                            </ul>
+                            <div class="divImage">
+                                <img src="image/10.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>Setelah login di Zoiper:</p>
+                            <ul type="disc">
+                                <li><p>Masukkan IP Address: Masukkan alamat IP server Asterisk yang telah Anda konfigurasi, misalnya 192.168.1.6.</p></li>
+                                <li><p>Tekan Next: Setelah memasukkan alamat IP, tekan Next untuk melanjutkan proses konfigurasi.</p></li>
+                            </ul>
+                            <div class="divImage">
+                                <img src="image/11.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>Setelah itu tekan Skip</p>
+                            <div class="divImage">
+                                <img src="image/12.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>Setelah menekan Skip, pastikan SIP UDP berwarna hijau dengan tulisan "Found" yang menandakan koneksi SIP berhasil. Setelah itu, tekan Next untuk melanjutkan.</p>
+                            <div class="divImage">
+                                <img src="image/13.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>Setelah membuka MicroSIP, tekan ikon panah ke bawah pada antarmuka aplikasi untuk membuka menu pengaturan atau pilihan yang lebih lengkap.</p>
+                            <div class="divImage">
+                                <img src="image/14.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>
+                                Setelah menekan ikon panah ke bawah dan menu muncul, pilih opsi "Add Account..." untuk menambahkan akun baru ke MicroSIP.</p>
+                            <div class="divImage">
+                                <img src="image/15.jpg" alt="">
+                 
+                            </div>
+                                       </li>
+                        <li>
+                            <ul type="disc">
+                                <li><p>Isi SIP Server: Masukkan alamat IP server Asterisk, misalnya 192.168.1.6.</p></li>
+                                <li><p>Isi Username: Masukkan nomor kontak kedua, misalnya 19216805.</p></li>
+                                <li><p>Isi Domain: Masukkan alamat IP server Asterisk lagi, misalnya 192.168.1.6.</p></li>
+                                <li><p>Isi Password: Masukkan password sesuai dengan secret yang telah diatur, misalnya 6789.</p></li>
+                                <li><p>Klik Save: Setelah mengisi semua kolom, klik Save untuk menyimpan konfigurasi akun SIP.</p></li>
+                            </ul>
+                            <div class="divImage">
+                                <img src="image/16.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                    </ol>
+                </div>
+                <div class="langkah01">
+                    <h3>Bagian 5: Mengujicoba Zoiper dengan MicroSIP</h3>
+                    <ol>
+                        <li>
+                            <p>Di MicroSIP, masukkan nomor kontak yang sesuai dengan (nomer 01), misalnya 19216820. Setelah itu, klik Call untuk memulai panggilan.</p>
+                            <div class="divImage">
+                                <img src="image/17.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>Setelah menekan Call di MicroSIP, jika panggilan masuk muncul di Zoiper, itu berarti konfigurasi berhasil dan kedua perangkat SIP telah terhubung dengan baik.</p>
+                            <div class="divImage">
+                                <img src="image/18.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>Selanjutnya, di Zoiper, masukkan nomor kontak kedua yang telah dikonfigurasi sebelumnya, misalnya 19216805, lalu tekan Dial untuk memulai panggilan.</p>
+                            <div class="divImage">
+                                <img src="image/19.jpg" alt="">
+                 
+                            </div>
+                                   </li>
+                        <li>
+                            <p>
+                                Jika panggilan masuk muncul di MicroSIP setelah Anda melakukan dial dari Zoiper, itu berarti konfigurasi berhasil, dan kedua perangkat SIP telah terhubung dengan baik.</p>
+                            <div class="divImage">
+                                <img src="image/20.jpg" alt="">
+                 
+                            </div>
+                                       </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <!-- FOOTER -->
+</body>
+</html>

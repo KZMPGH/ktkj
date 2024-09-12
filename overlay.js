@@ -12,15 +12,15 @@ function overlay() {
     '<div class="a01">'+
         '<div class="a02">'+
             '<div class="l01" id="beranda">'+
-                '<a href="https://kzmpgh.github.io/oskama12"><h4>BERANDA</h4></a>'+
+                '<a href="https://kzmpgh.github.io/KTKJ/"><h4>BERANDA</h4></a>'+
             '</div>'+
-            '<div class="l01" id="acara">'+
-                '<a href="https://kzmpgh.github.io/oskama12/event/"><h4>ACARA</h4></a>'+
-            '</div>'+
-            '<div class="l01" id="galeri">'+
-                '<a href="https://kzmpgh.github.io/oskama12/galeri/"><h4>GALERI</h4></a>'+
-            '</div>'+  
-            '<div class="a03"></div>'+
+            // '<div class="l01" id="acara">'+
+            //     '<a href="https://kzmpgh.github.io/oskama12/event/"><h4>ACARA</h4></a>'+
+            // '</div>'+
+            // '<div class="l01" id="galeri">'+
+            //     '<a href="https://kzmpgh.github.io/oskama12/galeri/"><h4>GALERI</h4></a>'+
+            // '</div>'+  
+            // '<div class="a03"></div>'+
         '</div>'+
     '</div>';
 

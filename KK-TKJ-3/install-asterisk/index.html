@@ -34,60 +34,96 @@
                     <ol>
                         <li>
                             <p>Pertama, buka VirtualBox dan pilih mesin virtual yang telah Anda konfigurasi. Klik dua kali pada mesin virtual atau klik tombol "Start" untuk menjalankan mesin virtual.</p>    
-                            <img src="../image/start-mesin.jpg" alt="gambar">                        
+                            <div class="divImage">
+<img src="../image/start-mesin.jpg" alt="gambar">
+                            </div>
+                                                    
                         </li>
                         <li>
                             <p>Setelah mesin virtual berjalan, login menggunakan akun Anda dengan memasukkan username dan password yang telah Anda buat sebelumnya.</p>
-                            <img src="../image/login-user.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="../image/login-user.jpg" alt="">
+      
+                            </div>
+                                              </li>
                         <li>
                             <p>Setelah login ke akun Anda, ketik perintah berikut di terminal untuk masuk sebagai superuser:</p>
-                                <div id="p" class="terminal">su</div>
+                                <div id="p" class="terminal"><p>su</p></div>
                             <p>Masukkan password superuser Anda saat diminta. Ini memberikan Anda hak administratif untuk melakukan instalasi.</p>
-                            <img src="../image/super-user.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="../image/super-user.jpg" alt="">
+      
+                            </div>
+                                              </li>
                         <li>
                             <p>Setelah masuk sebagai superuser, ketik perintah berikut untuk membuka dan mengedit file daftar sumber paket:</p>
-                                <div id="p" class="terminal">nano /etc/apt/sources.list</div>
+                                <div id="p" class="terminal"><p>nano /etc/apt/sources.list</p></div>
                             <p>Ini akan membuka file "sources.list" di editor teks nano, di mana Anda dapat menambahkan atau memodifikasi repositori untuk memastikan bahwa Anda dapat mengakses paket yang diperlukan.</p>
-                            <img src="image/1.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="image/1.jpg" alt="">
+                  
+                            </div>
+                                  </li>
                         <li>
                             <p>Di dalam editor nano, beri tanda pagar "#"" pada setiap baris teks yang ada untuk menonaktifkan repositori yang ada. Kemudian, tambahkan baris-baris berikut di bagian bawah file:</p>
-                                <div id="p" class="terminal">deb http://deb.debian.org/debian bullseye main <br>deb-src http://deb.debian.org/debian bullseye main</div>
+                                <div id="p" class="terminal"><p>deb http://deb.debian.org/debian bullseye main <br>deb-src http://deb.debian.org/debian bullseye main</p></div>
                             <p>Ini akan menambahkan repositori utama Debian Bullseye ke daftar sumber paket Anda.</p>
-                            <img src="image/2.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="image/2.jpg" alt="">
+                  
+                            </div>
+                                  </li>
                         <li>
                             <p>Setelah menambahkan baris baru ke "sources.list", tekan Ctrl + X untuk keluar dari nano. Ketika diminta untuk menyimpan perubahan, tekan "Y" untuk mengonfirmasi "Yes", lalu tekan Enter untuk menyimpan file dan keluar dari editor.</p>
-                            <img src="image/3.jpg" alt="">
-                            <img src="image/4.jpg" alt="">
-                            <img src="image/5.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="image/3.jpg" alt="">
+                  
+                            </div>
+                                      <div class="divImage">
+<img src="image/4.jpg" alt="">
+                  
+                            </div>
+                                      <div class="divImage">
+<img src="image/5.jpg" alt="">
+                  
+                            </div>
+                                  </li>
                         <li>
                             <p>Ketik perintah berikut untuk memperbarui daftar paket:</p>
-                                <div id="p" class="terminal">apt-get update</div>
+                                <div id="p" class="terminal"><p>apt-get update</p></div>
                             <p>Tunggu hingga proses selesai dan pastikan ada tulisan "Done" di akhir output sebagai tanda bahwa daftar paket telah berhasil diperbarui.</p>
-                            <img src="image/6.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="image/6.jpg" alt="">
+                  
+                            </div>
+                                  </li>
                         <li>
                             <p>Ketik perintah berikut untuk memperbarui paket yang sudah terinstal ke versi terbaru:</p>
-                                <div id="p" class="terminal">apt-get upqrade</div>
+                                <div id="p" class="terminal"><p>apt-get upqrade</p></div>
                             <p>Tunggu hingga proses upgrade selesai. Ini akan memastikan bahwa semua paket di sistem Anda diperbarui sebelum menginstal Asterisk.</p>
-                            <img src="image/7.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="image/7.jpg" alt="">
+                  
+                            </div>
+                                  </li>
                         <li>
                             <p>Ketik perintah berikut untuk memulai instalasi Asterisk:</p>
-                                <div id="p" class="terminal">apt-get install asterisk</div>
+                                <div id="p" class="terminal"><p>apt-get install asterisk</p></div>
                             <p>Saat diminta untuk konfirmasi, ketik "Y" dan tekan Enter. Tunggu hingga proses instalasi selesai.</p>
-                            <img src="image/8.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="image/8.jpg" alt="">
+                  
+                            </div>
+                                  </li>
                         <li>
                             <p>Untuk memeriksa apakah Asterisk telah berhasil diinstal, ketik perintah berikut:</p>
-                                <div id="p" class="terminal">apt list asterisk</div>
+                                <div id="p" class="terminal"><p>apt list asterisk</p></div>
                             <p>Periksa output untuk memastikan ada paket asterisk yang bertuliskan "installed". Ini menandakan bahwa Asterisk telah terinstal dengan benar di sistem Anda.</p>
-                            <img src="image/test.jpg" alt="">
-                        </li>
+                            <div class="divImage">
+<img src="image/test.jpg" alt="">
+               
+                            </div>
+                                     </li>
                     </ol>
                 </div>
             </div>

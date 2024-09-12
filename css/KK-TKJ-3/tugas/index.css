@@ -26,10 +26,16 @@ article{
 }
 
 .langkah01 img{
-    width: 100%;
+    max-width: 100%;
     border-radius: 0.3em;
     filter: drop-shadow(0em 0em 0.2em #00000031);
-    margin-top: 1em;
+    margin-top: 0.3em;
+    max-height: 37em;
+}
+
+.langkah01 .divImage{
+    display: flex;
+    justify-content: center;
 }
 
 ol{
@@ -40,29 +46,34 @@ ol{
 .langkah01 > ol > li{
     margin-left: 1em;
     background-color: #e6e6e6;
-    padding: 0em 1em 1em 1em;
+    padding: 0.7em 1em 1em 1em;
     border-radius: 0.3em;
     filter: drop-shadow(0em 0em 0.2em #00000031);
     margin-top: 1em;
     position: relative;
     cursor: pointer;
     overflow: hidden; /* Agar p tidak keluar dari li saat animasi */
-    transition: background-color 0.5s ease, padding 0.5s ease; /* Animasi untuk perubahan padding dan background */
+    transition: background-color 0.8s ease, padding 0.8s ease; /* Animasi untuk perubahan padding dan background */
 }
 
-.langkah01 > ol > li p , .langkah01 > ol > li ul, #p{ 
+.langkah01 > ol > li p{ 
     max-height: 0; /* Dimulai dari height 0 */
     opacity: 0;
-    transform: translateY(3em);
-    transition: opacity 0.5s ease, transform 0.5s ease, max-height 0.5s ease, padding 0.5s ease; /* Animasi max-height */
+    transform: translateY(4Sem);
+    transition: opacity 0.8s ease, transform 0.8s ease, max-height 0.8s ease, padding 0.8s ease; /* Animasi max-height */
     margin: 0;
+}
+
+.langkah01 > ol > li > ul > li{
+    opacity: 0;
+    transition: opacity 0.8s ease;
 }
 
 .langkah01 > ol > li:hover{
     background-color: #e0e0e0; /* Background berubah saat hover */
     padding: 1.2em;
-    p , ul, #p{
-        max-height: 100px; /* Atur sesuai tinggi maksimal dari teks */
+    p{
+        max-height: 8em; /* Atur sesuai tinggi maksimal dari teks */
         opacity: 1;
         transform: translateY(0em);
     }
@@ -70,9 +81,19 @@ ol{
         padding: 0.4em;
         padding-left: 0.6em;
     }
+    #p{
+        opacity: 1;
+        transform: translateY(0em);
+    }
+    ul > li{
+        opacity: 1;
+    }
 }
 
 .terminal{
+    opacity: 0;
+    transform: translateY(4Sem);
+    transition: opacity 0.8s ease, transform 0.8s ease, padding 0.8s ease, padding-left 1.5s ease;
     padding: 0em;
     padding-left: 0;
     border-radius: 0.4em;
