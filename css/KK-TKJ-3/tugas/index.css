@@ -45,7 +45,7 @@ ol{
 
 .langkah01 > ol > li{
     margin-left: 1em;
-    background-color: #e6e6e6;
+    background-color: #e7e7e7;
     padding: 0.7em 1em 1em 1em;
     border-radius: 0.3em;
     filter: drop-shadow(0em 0em 0.2em #00000031);
@@ -53,7 +53,7 @@ ol{
     position: relative;
     cursor: pointer;
     overflow: hidden; /* Agar p tidak keluar dari li saat animasi */
-    transition: background-color 0.8s ease, padding 0.8s ease; /* Animasi untuk perubahan padding dan background */
+    transition: background-color 0.8s ease; /* Animasi untuk perubahan padding dan background */
 }
 
 .langkah01 > ol > li p{ 
@@ -70,8 +70,7 @@ ol{
 }
 
 .langkah01 > ol > li:hover{
-    background-color: #e0e0e0; /* Background berubah saat hover */
-    padding: 1.2em;
+    background-color: rgb(226, 226, 226); /* Background berubah saat hover */
     p{
         max-height: 8em; /* Atur sesuai tinggi maksimal dari teks */
         opacity: 1;
