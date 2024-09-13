@@ -35,7 +35,7 @@ function overlay() {
         '<div class="f03"></div>'+
         '<div class="bf01">'+
             '<h5>Website</h5>'+
-            '<h3>KZMP TKJ </h3>'+
+            '<h3>KTKJ </h3>'+
             '<h5>dari</h5>'+
             '<a href="https://www.instagram.com/kenzena_/"><h5>KZMP</h5></a>'+
         '</div>'+
