@@ -71,23 +71,25 @@ ol{
 
 .langkah01 > ol > li:hover{
     background-color: rgb(226, 226, 226); /* Background berubah saat hover */
-    p{
-        max-height: 8em; /* Atur sesuai tinggi maksimal dari teks */
-        opacity: 1;
-        transform: translateY(0em);
-    }
-    .terminal{
-        padding: 0.4em;
-        padding-left: 0.6em;
-    }
-    #p{
-        opacity: 1;
-        transform: translateY(0em);
-    }
-    ul > li{
-        opacity: 1;
-    }
 }
+
+.langkah01 > ol > li:hover p{
+    max-height: 8em; /* Atur sesuai tinggi maksimal dari teks */
+    opacity: 1;
+    transform: translateY(0em);
+}
+.langkah01 > ol > li:hover .terminal{
+    padding: 0.4em;
+    padding-left: 0.6em;
+}
+.langkah01 > ol > li:hover #p{
+    opacity: 1;
+    transform: translateY(0em);
+}
+.langkah01 > ol > li:hover ul > li{
+    opacity: 1;
+}
+
 
 .terminal{
     opacity: 0;
