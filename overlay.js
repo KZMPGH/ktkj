@@ -12,7 +12,7 @@ function overlay() {
     '<div class="a01">'+
         '<div class="a02">'+
             '<div class="l01" id="beranda">'+
-                '<a href="https://kzmpgh.github.io/KTKJ/"><h4>BERANDA</h4></a>'+
+                '<a href="https://kzmpgh.github.io/ktkj/"><h4>BERANDA</h4></a>'+
             '</div>'+
             // '<div class="l01" id="acara">'+
             //     '<a href="https://kzmpgh.github.io/oskama12/event/"><h4>ACARA</h4></a>'+
