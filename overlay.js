@@ -1,4 +1,4 @@
-function overlay() {
+document.addEventListener('DOMContentLoaded', function overlay() {
     // O S K A M A  1 2
     // OSIS TARUNA TARUNI ANGKATAN 12
     document.getElementById("header00").innerHTML = 
@@ -41,7 +41,7 @@ function overlay() {
         '</div>'+
     '</div>';
 
-    document.getElementById("maintance").innerHTML =
-    '<h2>Beberapa Halaman Sedang Dalam Perbaikan!!...</h2>';
+    // document.getElementById("maintance").innerHTML =
+    // '<h2>Beberapa Halaman Sedang Dalam Perbaikan!!...</h2>';
 
-}
+})
