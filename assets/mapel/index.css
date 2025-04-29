@@ -2,6 +2,13 @@ article{
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article > section{
+    width: 800px;
 }
 
 .hero {
