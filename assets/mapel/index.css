@@ -3,3 +3,121 @@ article{
     padding-bottom: 1em;
     background-color: #ececec;
 }
+
+.hero {
+    background: linear-gradient(120deg, #4f8cff 0%, #6ee7b7 100%);
+    color: #fff;
+    text-align: center;
+    padding: 3em 1em 2em 1em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 24px rgba(79,140,255,0.15);
+    margin: 1.5em;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    font-weight: 700;
+}
+.hero .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #e0f7fa;
+}
+.cta-btn {
+    background: #fff;
+    color: #4f8cff;
+    padding: 0.8em 2em;
+    border-radius: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+}
+.cta-btn:hover {
+    background: #4f8cff;
+    color: #fff;
+}
+
+.features {
+    margin: 2em 0;
+    text-align: center;
+}
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #333;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5em;
+    margin: 1em;
+}
+.card {
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 2em 1.2em;
+    text-align: left;
+    transition: transform 0.15s, box-shadow 0.15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(79,140,255,0.13);
+}
+.card h3 {
+    margin-top: 0;
+    color: #4f8cff;
+    font-size: 1.3em;
+}
+.card p {
+    color: #444;
+    margin-bottom: 1.2em;
+}
+.card-link {
+    align-self: flex-start;
+    color: #6ee7b7;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.card-link:hover {
+    color: #4f8cff;
+    text-decoration: underline;
+}
+
+.about {
+    background: #f7fafc;
+    border-radius: 1em;
+    padding: 2em 1.5em;
+    margin: 1.5em;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.about h2 {
+    color: #4f8cff;
+    margin-bottom: 0.5em;
+}
+.about p {
+    color: #333;
+    font-size: 1.1em;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    .features h2 {
+        font-size: 1.2em;
+    }
+    .about {
+        padding: 1em 0.5em;
+    }
+}
